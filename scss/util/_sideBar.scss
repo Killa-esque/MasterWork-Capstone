@@ -1,0 +1,85 @@
+.toggle-right-sidebar {
+    float: right;
+    position: fixed;
+    right: 0px;
+    top: 70px;
+    width: 120px;
+    z-index: 99999;
+    text-align: center;
+
+    .icon {
+        background: #0D1326;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: #e6ebff;
+        border-radius: 50px;
+        font-size: 26px;
+        cursor: pointer;
+        opacity: .5;
+    }
+}
+
+.side-bar {
+    width: 120px;
+    position: fixed;
+    height: 100%;
+    z-index: 10;
+    right: 0px;
+    top: 0;
+    margin-top: 60px;
+    transition: all .5s ease-in-out;
+    overflow-y: auto;
+
+    .container {
+        .main-content {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 9999;
+            padding: 40px 5px;
+            padding-top: 70px;
+            margin-bottom: 70px;
+            background: #0D1326;
+            border-top-left-radius: 9px;
+            border-bottom-left-radius: 9px;
+
+            .btns {
+                border-top: 1px solid #41414d;
+                padding-top: 20px;
+
+                a {
+                    display: block;
+                    color: #e6ebff;
+                    text-decoration: none;
+                    line-height: 24px;
+                    opacity: .6;
+                    margin-bottom: 20px;
+                    text-align: center;
+                    transition: all .5s;
+                    &:hover{
+                        opacity: 1;
+                    }
+
+                    .icon {
+                        display: block;
+                        span {
+                            display: inline-block;
+                        }
+                    }
+
+                    .text {
+                        display: block;
+                        color: #e6ebff;
+                        text-decoration: none;
+                        line-height: 24px;
+                        opacity: .6;
+                        margin-bottom: 20px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+main {
+    .affirmation {
+        background-size: cover;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)), url(../../img/bg.jpg);
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 480px;
+        display: grid;
+        align-items: center;
+        padding: 2rem 0;
+
+        .container-fluid {
+            @media screen and (min-width: 300px) {
+                max-width: 100%;
+                padding: 0 15px;
+                margin: auto;
+            }
+
+            @media screen and (min-width: 576px) {
+                max-width: 100%;
+                padding: 0 25px;
+                margin: auto;
+            }
+
+            @media screen and (min-width: 992px) {
+                max-width: 100%;
+            }
+
+            @media screen and (min-width: 1200px) {
+                max-width: 1200px;
+                margin: auto;
+                padding: 16px 25px;
+            }
+
+            .main-content {
+                max-width: 550px;
+
+                .heading {
+                    h2 {
+                        @include text (30px, 700, #ffffff, 0);
+                        line-height: 36px;
+                        @media screen and (max-width:576px) {
+                            @include text (26px, 600, #ffffff, 0);
+                            line-height: 30px;
+                        }
+                    }
+                }
+
+                .content {
+                    .para {
+                        @include text (16px, 300, #ffffff, 0);
+                        line-height: 24.5px;
+                        @media screen and (max-width:576px) {
+                            @include text (14px, 300, #ffffff, 0);
+                            line-height: 20.5px;
+                        }
+                    }
+
+                    .btn-readMore {
+                        text-decoration: none;
+                        color: #212529;
+                        background-color: #f8f9fa;
+                        border-color: #f8f9fa;
+                        transition: 0.3s ease-out;
+                        display: inline-block;
+                        line-height: 52px;
+                        font-weight: 700;
+                        font-size: 14px;
+                        margin: 0px;
+                        padding: 0px 30px;
+                        border-radius: 5px;
+                        text-transform: uppercase;
+                        @media screen and (max-width:576px) {
+                            margin-top: 10px;
+                            padding: 0px 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

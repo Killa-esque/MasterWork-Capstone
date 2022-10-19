@@ -1,0 +1,263 @@
+.breadcrumbs {
+  padding: 15px 20px;
+  margin-top: 90px;
+  transition: all 1s;
+  .container-fluid {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 25px;
+
+    a {
+      @include text(14px, 400, $tertiary_text_color, 0);
+      text-decoration: none;
+    }
+
+    .breadcrumb_last {
+      @include text(14px, 400, $primary_text_color, 0);
+    }
+  }
+}
+.body {
+  .contact {
+    padding: 50px;
+    .container-fluid {
+      @media screen and (min-width: 300px) {
+        max-width: 100%;
+        padding: 0 15px;
+        margin: auto;
+      }
+
+      @media screen and (min-width: 576px) {
+        max-width: 100%;
+        padding: 0 25px;
+        margin: auto;
+      }
+
+      @media screen and (min-width: 992px) {
+        max-width: 100%;
+      }
+
+      @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+        margin: auto;
+        padding: 16px 25px;
+      }
+      .main-content {
+        .contact-heading {
+          margin-bottom: 50px;
+          h2 {
+            @include text(46px, 800, $primary_text_color, 0);
+            font-size: 46px;
+            line-height: 55px;
+            text-align: center;
+          }
+        }
+        .contact-body {
+          align-items: center;
+          .thumbnail {
+            text-align: center !important;
+            img {
+              max-width: 100%;
+              height: auto;
+              vertical-align: middle;
+              border-style: none;
+              border-radius: var(--card-curve);
+              transition: 0.3s ease-in-out;
+              @include hover-translateY();
+            }
+          }
+          .main-form {
+            max-height: 650px;
+            position: relative;
+            @media screen and (max-width: 992px) {
+              margin: 50px 0;
+            }
+            .contact-form {
+              position: relative;
+              background: #fff;
+              padding: 2rem;
+              border-radius: 7px;
+              box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+              left: -75px;
+              @media screen and (max-width: 992px) {
+                left: 0;
+              }
+              .form-header {
+                @include max-width-750px();
+                h3 {
+                  @include text(46px, 700, $primary_text_color, 0);
+                  line-height: 1;
+                  @include py-between-each-para();
+                  margin: 0;
+                }
+                p {
+                  @include text(16px, 400, $secondary_text_color, 0);
+                  @include py-between-each-para();
+                  line-height: 22.5px;
+                }
+              }
+              .form-body {
+                .form-input {
+                  input {
+                    @include text(16px, 600, #000, 0);
+                    outline: none;
+                    padding: 15px 20px;
+                    width: 100%;
+                    line-height: 26px;
+                    margin-bottom: 15px;
+                    border-radius: 8px;
+                    border: 1px solid #eee;
+                    background: #f7f9fc;
+                  }
+                  textarea {
+                    @include text(16px, 600, #000, 0);
+                    outline: none;
+                    padding: 15px 20px;
+                    width: 100%;
+                    line-height: 26px;
+                    margin-bottom: 15px;
+                    border-radius: 8px;
+                    border: 1px solid #eee;
+                    background: #f7f9fc;
+                  }
+                }
+                .btn-send {
+                  @include button-form(50px, 0);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .call-help {
+    background: $blue_gray_color;
+    padding: 50px 0;
+    .container-fluid {
+      @media screen and (min-width: 300px) {
+        max-width: 100%;
+        padding: 0 15px;
+        margin: auto;
+      }
+
+      @media screen and (min-width: 576px) {
+        max-width: 100%;
+        padding: 0 25px;
+        margin: auto;
+      }
+
+      @media screen and (min-width: 992px) {
+        max-width: 100%;
+      }
+
+      @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+        margin: auto;
+        padding: 16px 25px;
+      }
+      .main-content {
+        .call-help-heading {
+          @include py-between-each-para();
+          @include max-width-750px();
+          margin-bottom: 20px;
+          text-align: center;
+          .sub-title {
+            line-height: 20px;
+            text-transform: uppercase;
+            @include text(16px, 700, $tertiary_text_color, 0);
+            margin-bottom: 5px;
+          }
+          .main-title {
+            @include text(46px, 700, $primary_text_color, 0);
+            @include py-between-each-para();
+            line-height: 1;
+            margin: 0;
+          }
+          p {
+            @include text(16px, 400, $secondary_text_color, 0);
+            line-height: 22.5px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5px;
+          }
+        }
+        .call-help-body {
+          .wrapper {
+            display: flex;
+            gap: 50px;
+            @media screen and (max-width:992px) {
+              gap: 30px;
+              flex-direction: column;
+            }
+            @media screen and (max-width:576px) {
+              flex-direction: column;
+              gap: 20px;
+            }
+            .info {
+              @include hover-translateY();
+              width: calc(100% / 3);
+              @media screen and (max-width:992px) {
+                width: 100%;
+              }
+              @media screen and (max-width:576px) {
+                width: 100%;
+              }
+              box-shadow: 1px 5px 7.5px rgba(196, 196, 196, 0.2);
+              padding: 2rem;
+              background: #fff;
+              border-radius: 12px;
+              display: grid;
+              grid-template-rows: auto 1fr;
+              grid-gap: 20px;
+              transition: 0.3s ease-in-out;
+              text-align: center;
+              .icon {
+                width: 60px;
+                margin: 0 auto;
+                height: 60px;
+                text-align: center;
+                border-radius: 50%;
+                line-height: 60px;
+                background: rgba(220, 79, 114, 0.1);
+                span {
+                }
+              }
+              .details {
+                h4 {
+                  @include text(20px, 700, $primary_text_color, 0);
+                  margin-bottom: 12px;
+                }
+                p {
+                  line-height: 28px;
+                  @include text(18px, 700, $secondary_text_color, 0);
+                }
+                a {
+                  text-decoration: none;
+                  @include text(18px, 700, $secondary_text_color, 0);
+                  display: block;
+                  transition: 0.3s ease-in;
+                  &:hover {
+                    text-decoration: underline;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .map {
+    .container-fluid {
+      padding: 0;
+      .main-content {
+        iframe {
+          width: 100%;
+          height: 400px;
+          display: block;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <link rel="icon" type="image/png" href="./img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Bootstrap CSS v5.2.0-beta1 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+  <!--fontawesome 6-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <!--style.css-->
+  <link rel="stylesheet" href="./css/styles.min.css" />
+</head>
+
+<body>
+
+  <div class="toggle-right-sidebar">
+    <span class="fa fa-angle-double-right icon"></span>
+  </div>
+
+  <!-- Side-bar-start -->
+  <div class="side-bar">
+    <div class="container">
+      <div class="main-content">
+        <div class="btns">
+          <a href="https://w3layouts.com/?p=4763800000016615">
+            <span class="icon back">
+              <span class="fa fa-arrow-left"></span>
+            </span>
+            <span class="text">Back</span>
+          </a>
+          <a href="https://w3layouts.com/?p=4763800000016615">
+            <span class="icon download">
+              <span class="fa fa-download"></span>
+            </span>
+            <span class="text">Download</span>
+          </a>
+          <a href="https://w3layouts.com/checkout/?add-to-cart=4763800000016615" class="no-margin-bottom-mobile">
+            <span class="icon buy">
+              <span class="fa fa-shopping-cart"></span>
+            </span>
+            <span class="text">Buy</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Side-bar-end -->
+
+  <!-- Header Start -->
+  <header id="header" class="bg-white">
+    <nav class="navbar navbar-expand-lg navigation bg-white">
+      <div class="container-fluid text-center">
+        <a id="logo" class="navbar-brand logo" href="index.html">
+          <span class="fa fa-handshake"></span>
+          <span>Masterwork</span>
+        </a>
+        <button class="navbar-toggler" id="toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="navbar-toggler-icon open-close"></i>
+        </button>
+        <div class="collapse navbar-collapse menu" id="navbarNav">
+          <ul class="navbar-nav ms-md-auto gap-2 list">
+            <li class="nav-item rounded home px-2">
+              <a class="nav-link" aria-current="page" href="index.html"></i>Home</a>
+            </li>
+            <li class="nav-item rounded about px-2">
+              <a class="nav-link" href="about.html"></i>About</a>
+            </li>
+            <li class="nav-item rounded service px-2">
+              <a class="nav-link" href="service.html"></i>Services</a>
+            </li>
+            <li class="nav-item dropdown page">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Pages
+                <i class="fa fa-angle-down fs-6"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="blog.html">Blog posts</a></li>
+                <li><a class="dropdown-item" href="blog-single.html">Blog single</a></li>
+                <li><a class="dropdown-item" href="landing-single.html">Landing page</a></li>
+              </ul>
+            </li>
+            <li class="nav-item rounded contact px-2">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item ml-lg-3 px-2 ml-0 mt-lg-0 mt-3 schedule">
+              <a class="btn btn-outline-primary theme-button button-schedule" href="contact.html">Schedule a Demo</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Header End -->
+
+  <!-- Breadcrumbs Start -->
+  <nav id="breadcrumbs" class="breadcrumbs bg-light">
+    <div class="container-fluid">
+      <a href="index.html">Home</a> » <span class="breadcrumb_last" aria-current="page">Contact</span>
+    </div>
+  </nav>
+  <!-- Breadcrumbs End -->
+
+  <!-- Body Start -->
+  <main class="body">
+
+    <!-- Contact Start -->
+    <section class="contact">
+      <div class="container-fluid">
+        <div class="main-content">
+          <div class="contact-heading">
+            <h2>Contact Us</h2>
+          </div>
+          <div class="contact-body row">
+            <div class="col-lg-6 thumbnail">
+              <img src="./img/contact.jpg" alt="CONTACT IMAGE">
+            </div>
+            <div class="col-lg-6 main-form">
+              <div class="contact-form">
+                <div class="form-header">
+                  <h3>Drop us a Message</h3>
+                  <p>
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                    turpis sodales quis. Integer sit amet mattis quam.
+                  </p>
+                </div>
+                <form class="form-body" action="https://sendmail.w3layouts.com/submitForm" method="post">
+                  <div class="form-input">
+                    <input type="text" name="inputName" placeholder="Enter your name" class="contact-input">
+                    <input type="email" name="inputEmail" placeholder="Enter your mail" class="contact-input">
+                    <input type="text" name="inputSubject" placeholder="Subject" class="contact-input">
+                    <textarea name="inputMessage" cols="30" rows="5" placeholder="Enter your message"
+                      class="contact-textarea"></textarea>
+                  </div>
+                  <div class="btn-send">
+                    <button class="button">Send</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact End -->
+
+    <!-- Contact Start -->
+    <section class="call-help">
+      <div class="container-fluid">
+        <div class="main-content">
+          <div class="call-help-heading">
+            <h6 class="sub-title">Get in touch</h6>
+            <h3 class="main-title">We're here to help</h3>
+            <p>
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+              Nulla mollis dapibus nunc, ut rhoncus
+              turpis sodales quis. Integer sit amet mattis quam.
+            </p>
+          </div>
+          <div class="call-help-body">
+            <div class="wrapper">
+              <div class="info">
+                <div class="icon">
+                  <span class="fa fa-location-arrow"></span>
+                </div>
+                <div class="details">
+                  <h4>Our head office address:</h4>
+                  <p>8th-block road, cross avenue, Lorem dolor sit, New York, USA</p>
+                </div>
+              </div>
+              <div class="info">
+                <div class="icon">
+                  <span class="fa fa-phone"></span>
+                </div>
+                <div class="details">
+                  <h4>Call for help:</h4>
+                  <a href="tel:+040-123-456-88">+040-123-456-88</a>
+                  <a href="tel:+040-123-456-89">+040-123-456-89</a>
+                </div>
+              </div>
+              <div class="info">
+                <div class="icon">
+                  <span class="fa fa-envelope-open"></span>
+                </div>
+                <div class="details">
+                  <h4>Mail Us for information:</h4>
+                  <a href="info@masterwork.com">info@masterwork.com</a>
+                  <a href="masterwork@support.com">masterwork@support.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact End -->
+
+    <!-- Map Start -->
+    <section class="map">
+      <div class="container-fluid">
+        <div class="main-content">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001161.424489281!2d-78.01909140705047!3d42.72866436845163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sin!4v1570786994395!5m2!1sen!2sin"
+            frameborder="0" allowfullscreen="">
+          </iframe>
+        </div>
+      </div>
+    </section>
+    <!-- Map End -->
+  </main>
+  <!-- Body End -->
+
+  <!-- Footer Start -->
+  <footer>
+    <div class="container-fluid">
+      <div class="wrapper">
+        <div class="row main-row">
+          <section class="col-lg-2 col-md-6 col-sm-12 column">
+            <div class="footer-heading">
+              <h3>Company</h3>
+            </div>
+            <div class="footer-body">
+              <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Services</li>
+                <li>Blog</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+          </section>
+          <section class="col-lg-2 col-md-6 col-sm-12 column">
+            <div class="footer-heading">
+              <h3>Useful Links</h3>
+            </div>
+            <div class="footer-body">
+              <ul>
+                <li>Case Studies</li>
+                <li>Our Branches</li>
+                <li>Latest Media</li>
+                <li>About Company</li>
+                <li>Our People</li>
+              </ul>
+            </div>
+          </section>
+          <section class="col-lg-2 col-md-6 col-sm-12 column">
+            <div class="footer-heading">
+              <h3>Our Services</h3>
+            </div>
+            <div class="footer-body">
+              <ul>
+                <li>Privacy Policy</li>
+                <li>Our Terms</li>
+                <li>Services</li>
+                <li>Landing Page</li>
+                <li>Our People</li>
+              </ul>
+            </div>
+          </section>
+          <section class="col-lg-5 col-md-6 col-sm-12 column form-handle">
+            <div class="footer-heading">
+              <h3>Newsletter</h3>
+            </div>
+            <div class="footer-body">
+              <div class="end-column">
+                <h4>Get latest updates and offers.</h4>
+                <form action="#" class="subscribe" method="post">
+                  <input type="email" name="email" placeholder="Email Address" required="">
+                  <button type="submit">Go</button>
+                </form>
+                <p>Sign up for our latest news &amp; articles. We won't give you spam mails.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <hr class="row-barrier" style="opacity: 0.1;">
+
+        <div class="copyright mt-4">
+          <div class="columns text-lg-left text-center">
+            <p>© 2020 Masterwork. All rights reserved | Designed by <a href="https://w3layouts.com/">W3Layouts</a></p>
+          </div>
+          <div class="columns-2 mt-lg-0 mt-3">
+            <ul class="social">
+              <li><a href="#facebook"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li><a href="#linkedin"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li><a href="#twitter"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li><a href="#google"><i class="fab fa-google-plus-g"></i></a>
+              </li>
+              <li><a href="#github"><i class="fab fa-github"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <!-- Button Back To Top Start -->
+  <button onclick="topFunction()" id="myBtn" class="btn-backTop" title="Go to top">
+    <i class="fa fa-angle-up"></i>
+  </button>
+  <!-- Button Back To Top End -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+    crossorigin="anonymous"></script>
+
+  <!-- Seft-defined Script -->
+  <script>
+
+    // When the user scrolls down 90px from the top of the document, resize the navbar's padding and the logo's font size
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        document.querySelector("button.btn-backTop").style.display = "block"
+        document.querySelector("header").style.height = "70px";
+        document.querySelector("breadcrumbs").style.marginTop = "70px";
+      } else {
+        document.querySelector("button.btn-backTop").style.display = "none"
+        document.querySelector("header").style.height = "90px";
+        document.querySelector("breadcrumbs").style.marginTop = "90px";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+
+</html>
