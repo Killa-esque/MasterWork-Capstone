@@ -538,15 +538,13 @@
 
           .posts {
             .column {
-              @include hover-translateY();
               @media screen and (max-width: 765px) {
                 margin-bottom: 30px;
               }
               .box {
+                @include hover-translateY();
                 transition: 0.3s ease-in;
                 border-radius: var(--card-curve);
-                &:hover {
-                }
                 .card {
                   border-radius: 0;
                   border: 1px solid #eee;

@@ -1176,6 +1176,7 @@ header .navigation .container-fluid .menu .list .page ul li a::after {
   transition: width 0.5s;
 }
 header .navigation .container-fluid .menu .list .page ul li a:hover {
+  color: #dc4f72;
   background: transparent !important;
 }
 header .navigation .container-fluid .menu .list .page ul li a:hover::after {
@@ -5053,22 +5054,20 @@ main .news .container .pagination .page-arrow .page-link span {
   margin-bottom: 15px;
   padding-bottom: 10px;
 }
-.blog-single-main .blog-single-5 .container-fluid .wrapper .main-content .posts .column {
-  transition: 0.3s ease-in-out;
-  border-radius: 10px;
-}
-.blog-single-main .blog-single-5 .container-fluid .wrapper .main-content .posts .column:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-}
 @media screen and (max-width: 765px) {
   .blog-single-main .blog-single-5 .container-fluid .wrapper .main-content .posts .column {
     margin-bottom: 30px;
   }
 }
 .blog-single-main .blog-single-5 .container-fluid .wrapper .main-content .posts .column .box {
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
   transition: 0.3s ease-in;
   border-radius: var(--card-curve);
+}
+.blog-single-main .blog-single-5 .container-fluid .wrapper .main-content .posts .column .box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 .blog-single-main .blog-single-5 .container-fluid .wrapper .main-content .posts .column .box .card {
   border-radius: 0;
